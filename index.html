@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'page-header'>
+            <h1>Lorem Ipsum</h1>
+        </div>
+        <div class = 'jumbotron'>
+            <div class = 'row'>
+                <div class = 'col-sm-11'>
+                    <h3 id = 'subheading'>Lorem ipsum dolor sit</h3>
+                </div>
+                <div class = 'col-sm-1'>
+                    <div class = 'wrapper' style = "margin-top: 10pt;">
+                        <button class = 'btn btn-primary' type = 'button' id = 'logout'>Log out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = 'container'>
+            <div id = "text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla efficitur nunc tincidunt, 
+                    vel tristique sem suscipit. Nam vel nulla sit amet nunc tempor egestas eget et nunc. Integer posuere, 
+                    nunc at sodales condimentum, magna mi varius lacus, sed auctor turpis nibh at felis. Fusce gravida 
+                    hendrerit elit, et fringilla felis pulvinar eu. Phasellus dignissim nulla ut lobortis semper. 
+                    Aliquam consectetur, risus et dictum cursus, risus sem feugiat sem, ac auctor mi mauris eu metus. 
+                    Nulla id blandit mauris, non condimentum sem. Cras at ipsum sem. Maecenas diam enim, convallis quis 
+                    tincidunt sit amet, accumsan non tortor. Proin cursus tempus tincidunt. Mauris a aliquam justo. 
+                    Phasellus tempor nisi molestie, fringilla lorem fringilla, cursus diam. </p>
+                <p>Praesent odio mi, porta ac placerat quis, malesuada ut ante. Donec ultrices, lorem placerat gravida 
+                    condimentum, felis orci dapibus arcu, sit amet ullamcorper erat nibh vitae orci. In vel magna id ex 
+                    rhoncus lacinia. Sed interdum tortor tincidunt massa tincidunt, vel consequat ipsum hendrerit. Donec 
+                    semper tristique leo vel imperdiet. Ut rutrum dui auctor mauris gravida iaculis. Vestibulum porttitor 
+                    arcu ac tortor condimentum, id blandit enim finibus. Curabitur laoreet venenatis erat, a facilisis 
+                    urna pellentesque id. Phasellus tristique ornare nibh luctus maximus. Mauris sed odio at lectus 
+                    posuere facilisis. In non urna ac libero gravida ultrices.</p>
+                <p>Mauris auctor ullamcorper risus, a placerat mauris iaculis sed. Ut vitae eleifend augue. Duis tempor 
+                    neque at pellentesque placerat. Mauris et urna euismod, tristique metus sed, pretium metus. Nunc eu 
+                    enim et est pulvinar suscipit. Aliquam fermentum vehicula quam non molestie. Sed tincidunt metus vitae 
+                    est facilisis, et egestas ligula luctus. Sed ultricies congue dui vel tempor. Vestibulum interdum erat 
+                    odio, sed facilisis nibh vulputate pulvinar. Sed diam nisi, consequat sed mi at, feugiat fringilla 
+                    magna. Pellentesque risus arcu, porta a consectetur ac, finibus vitae quam.</p>
+                <p>Nam convallis a purus non ultrices. Mauris sagittis aliquam magna, a placerat tortor viverra et. Cras 
+                    non mauris venenatis, malesuada elit quis, laoreet nisl. Etiam et porttitor est, vitae posuere metus. 
+                    Proin faucibus ligula leo, ac sagittis elit efficitur in. Praesent egestas varius quam, ac finibus orci 
+                    maximus ut. Duis ante nunc, ullamcorper sit amet pulvinar at, auctor fermentum est. Nam ut elementum magna, 
+                    eget pulvinar lacus. Curabitur eleifend, odio vitae pretium eleifend, enim massa pulvinar lectus, sed 
+                    consectetur magna turpis non arcu. Phasellus lacinia, lacus nec iaculis vestibulum, lectus neque pulvinar 
+                    purus, dictum vestibulum ante enim sed lectus. Nullam iaculis pulvinar dui, ac rhoncus dui. Mauris et mauris 
+                    ut tellus accumsan pellentesque eget nec sapien. Phasellus lacinia massa nec metus aliquam, et imperdiet 
+                    ligula congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi 
+                    ut dolor felis. Donec dictum, augue quis viverra iaculis, mauris elit ultrices libero, at aliquam purus velit 
+                    eu libero.</p>
+                <p>Quisque commodo tempor diam. Mauris laoreet libero quis mattis laoreet. Proin in est eu nunc tristique aliquet. 
+                    Aliquam dictum nisl erat, in hendrerit lacus tincidunt ut. Suspendisse sed finibus magna, id pellentesque odio. 
+                    Aliquam erat volutpat. Fusce consectetur tempor quam, nec efficitur tortor pellentesque quis.</p>
+            </div>
+            <div id = "login"></div>
+            <div id = "wall">
+                <div class = "jumbotron jumbotron-fluid" style = "background-color:darksalmon">
+                    <h2 style = "text-align: center;">You do not have access to this content</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        (function(src){
+            var a=document.createElement("script");
+            a.type="text/javascript";
+            a.async=true;
+            a.src=src;
+            var b=document.getElementsByTagName("script")[0];
+            b.parentNode.insertBefore(a,b)
+            }
+        )("https://sandbox.tinypass.com/xbuilder/experience/load?aid=o1sRRZSLlw")
+    </script>
+    <script>
+        // grab relevant elements
+        const form = document.getElementById('login');
+        const text = document.getElementById('text');
+        const logout = document.getElementById('logout');
+        const wall = document.getElementById('wall');
+        
+        // don't display relevant elements yet
+        form.style.display = 'none';
+        text.style.display = 'none';
+        logout.style.display = 'none';
+        wall.style.display = 'none';
+        
+        // initialize tp and pianoId
+        tp = window['tp'] || [];
+        tp.push(['setUsePianoIdUserProvider', true]);
+
+        // prompts the user with the piano login
+        var displayPianoLogIn = function() {
+            tp.pianoId.show({
+                displayMode: 'inline',
+                screen: 'login',
+                containerSelector: '#login',
+                loggedIn: function(data) {
+                    console.log('user ', data.user, ' logged in with token', data.token);
+                    window.location.reload();
+                }
+            });
+        }
+        
+        // reveals text if user has access, displays wall otherwise
+        var revealIfAccess = function() {
+            user = tp.pianoId.getUser();
+            uid = user.uid;
+            
+            var params = {
+                rid : "RVYAS7T",
+                uid : uid
+            };
+
+            var callback = function(response) {
+                if (response.access && response.access.granted) {
+                    // the user has access
+                    text.style.display = '';
+                }
+                else {
+                    // the user does not have access
+                    wall.style.display = '';
+                }
+            }
+
+            tp.api.callApi("/access/check", params, callback);
+        }
+        
+        // if user is logged in, reveals the logout button and
+        // calls revealIfAccess. Displays the login prompt otherwise.
+        var checkLoggedIn = function() {
+            if (tp.pianoId.isUserValid()) {
+                console.log("Is logged in");
+                logout.style.display = '';
+                revealIfAccess();
+            } else {
+                console.log("trying to do something");
+                form.style.display = '';
+                displayPianoLogIn();
+            }
+        }
+
+        // logs the user out and refreshes the page
+        var logOutFunc = function() {
+            tp.pianoId.logout( () => {
+                window.location.reload();
+            });
+        }
+
+        logout.onclick = function() {
+            tp.push(["init", logOutFunc])
+        }
+
+        // run
+        tp.push(["init", checkLoggedIn]);
+    </script>
+</body>
+</html>
